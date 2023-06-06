@@ -3,8 +3,7 @@ name: Serverless
 on:
   push:
     branches:
-      - ci/strapi_publish
-      - main
+      - rohitgr7-patch-3
 
 jobs:
   job_1:
