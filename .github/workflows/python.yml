@@ -3,7 +3,7 @@ name: Serverless
 on:
   push:
     branches:
-      - rohitgr7-patch-3
+      - rohitgr7-patch-2
 
 jobs:
   job_1:
