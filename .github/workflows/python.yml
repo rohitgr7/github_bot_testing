@@ -1,0 +1,30 @@
+name: Serverless
+
+on:
+  push:
+    branches:
+      - ci/strapi_publish
+      - main
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python script
+      run: |
+        python scripts/pass.py
+
+  job_2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python script
+      run: |
+        python scripts/fail.py
